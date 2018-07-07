@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guardian Angel Mobile App</title>
+
+	<!-- Google font file. If you want you can change. -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+
+	<!-- Fontawesome font file css -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<!-- Template global css file. Requared all pages -->
+	<link rel="stylesheet" type="text/css" href="css/global.style.css">
+
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		<div class="nav-menu">
+		
+		</div>
+		<div class="wrapper-inline">
+			<!-- Header area start -->
+			<header>
+                <!-- extra class no-background -->
+				
+				<h1 class="page-title">REGISTER</h1>
+				
+			</header>
+			<!-- Header area end -->
+			<!-- Page content start -->
+			<main>
+				<section class="container">
+					<div class="form-divider"></div>
+
+					<div class="nav-header">
+                    <img src="img/logo.png" width="100%">
+                    </div>
+
+					<div class="form-divider"></div>
+					<div class="form-label-divider"></div>
+					<div class="form-divider"></div>
+                    <form action="" method="post" id="login_form">
+
+                    <div class="form-row-group with-icons">
+						<div class="form-row no-padding">
+							<i class="fa fa-user"></i>
+							<input type="text" name="name" class="form-element" id="name" placeholder="Name">
+						</div>
+
+						<div class="form-row no-padding">
+							<i class="fa fa-envelope"></i>
+							<input type="email" name="email" class="form-element" id="email" placeholder="Email">
+						</div>
+
+						<div class="form-row no-padding">
+							<i class="fa fa-phone"></i>
+							<input type="tel" name="phone" class="form-element" id="phone" placeholder="Mobile Number">
+						</div>
+
+						<div class="form-row no-padding">
+							<i class="fa fa-map"></i>
+							<input type="text" name="address" class="form-element" id="address" placeholder="Address">
+						</div>
+
+
+						<div class="form-row no-padding">
+							<i class="fa fa-user"></i>
+							<input type="text" name="user" class="form-element" id="user" placeholder="Username">
+						</div>
+						<div class="form-row no-padding">
+							<i class="fa fa-lock"></i>
+							<input type="password" name="pass" class="form-element" id="pass" placeholder="Password">
+						</div>
+
+					</div>
+					<div class="form-divider"></div>
+
+                        <div class="form-divider"></div>
+                        <div id="error" class="form-row txt-center"></div>
+
+					<div class="form-row">
+						<button class="button circle block green" type="submit" onclick="submitAjaxRegForm(); return false;">Sign Up</button>
+					</div>
+					<div class="form-row txt-center">
+						Already have an account? <a href="login.html">Login</a>
+					</div>
+                    </form>
+
+				</section>
+			</main>
+			<!-- Page content end -->
+		</div>
+	</div>
+
+
+	<!--Page loader DOM Elements. Requared all pages-->
+	<div class="sweet-loader">
+		<div class="box">
+		  	<div class="circle1"></div>
+		  	<div class="circle2"></div>
+		  	<div class="circle3"></div>
+		</div>
+	</div>
+	<!-- JQuery library file. requared all pages -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- Template global script file. requared all pages -->
+	<script src="js/global.script.js"></script>
+
+	<script type="text/javascript" src="js/app.js"></script>
+	
+</body>
+
+</html>

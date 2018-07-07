@@ -1,0 +1,5 @@
+<root>
+    <item name='android.os.Build SERIAL'>
+        <annotation name='android.support.annotation.Nullable' />
+    </item>
+</root>

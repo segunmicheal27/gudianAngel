@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guardian Angel Mobile App</title>
+
+	<!-- Google font file. If you want you can change. -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+
+	<!-- Fontawesome font file css -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<!-- Template global css file. Requared all pages -->
+	<link rel="stylesheet" type="text/css" href="css/global.style.css">
+</head>
+
+<body>
+
+
+
+
+<!--Page loader DOM Elements. Requared all pages-->
+<div class="sweet-loader">
+    <div class="box">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+    </div>
+</div>
+
+
+<div class="wrapper with-bg-image">
+		<div class="nav-menu">
+			<nav class="menu">
+				<!-- Template logo start -->
+				<div class="nav-header">
+					<a href="dashboard.html"><img src="img/app-logo.png" width="220"></a>
+				</div>
+				<!-- Template logo end -->
+				<!-- Menu navigation start -->
+				<div class="nav-container">
+					<ul class="main-menu">
+						<li>
+							<a href="dashboard.html"><i class="fa fa-home"></i> Home</a>
+						</li>
+						<li>
+							<a href="emergency.html"><i class="fa fa-file-text-o"></i> Emergency </a>
+						</li>
+						<li>
+							<a href="bodyguard.html"><i class="fa fa-file-text-o"></i> Body Guard Service</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-file-text-o"></i>Security Blog </a>
+						</li>
+						<li>
+							<a href="eventsecurity.html"><i class="fa fa-file-text-o"></i> Event Security </a>
+						</li>
+                        <li>
+							<a href="normalsecurityguards.html"><i class="fa fa-file-text-o"></i> Security Guards </a>
+						</li>
+                        <li>
+							<a href="vettedartisant.html"><i class="fa fa-file-text-o"></i> Vetted Workmen and Craftsmen </a>
+                        </li>
+                        <!--<li>-->
+							<!--<a href="splash.html"><i class="fa fa-sign-in"></i> Logout </a>-->
+						<!--</li>-->
+						
+					</ul>
+				</div>
+			<!-- Menu navigation end -->
+			</nav>
+		</div>
+		<div class="wrapper-inline">
+			<!-- Header area start -->
+            <header> <!-- extra class no-background -->
+                
+				<h1 class="page-title">SECURITY NEWS</h1>
+				<div class="navi-menu-button">
+					<em></em>
+					<em></em>
+					<em></em>
+				</div>
+			</header>
+			<!-- Header area end -->
+			<!-- Page content start -->
+			<main>
+				<section class="container" id="news-box"></section>
+			</main>
+			<!-- Page content end -->
+		</div>
+	</div>
+
+	<!-- JQuery library file. requared all pages -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<!-- Template global script file. requared all pages -->
+	<script src="js/global.script.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script>getNews();</script>
+
+</body>
+
+</html>

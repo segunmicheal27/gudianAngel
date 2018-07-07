@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guardian Angel Mobile App</title>
+
+	<!-- Google font file. If you want you can change. -->
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+
+	<!-- Fontawesome font file css -->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+	<!-- Template global css file. Requared all pages -->
+	<link rel="stylesheet" type="text/css" href="css/global.style.css">
+</head>
+
+<body>
+	
+	<div class="wrapper">
+			<div class="nav-menu">
+					<nav class="menu">
+						<!-- Template logo start -->
+						<div class="nav-header">
+							<a href="dashboard.html"><img src="img/app-logo.png" width="220"></a>
+						</div>
+						<!-- Template logo end -->
+						<!-- Menu navigation start -->
+						<div class="nav-container">
+							<ul class="main-menu">
+								<li>
+									<a href="dashboard.html"><i class="fa fa-home"></i> Home</a>
+								</li>
+								<li>
+									<a href="emergency.html"><i class="fa fa-file-text-o"></i> Emergency </a>
+								</li>
+								<li>
+									<a href="bodyguard.html"><i class="fa fa-file-text-o"></i> Body Guard Service</a>
+								</li>
+								<li>
+									<a href="#"><i class="fa fa-file-text-o"></i>Security Blog </a>
+								</li>
+								<li>
+									<a href="eventsecurity.html"><i class="fa fa-file-text-o"></i> Event Security </a>
+								</li>
+								<li>
+									<a href="normalsecurityguards.html"><i class="fa fa-file-text-o"></i> Security Guards </a>
+								</li>
+								<li>
+									<a href="vettedartisant.html"><i class="fa fa-file-text-o"></i> Vetted Workmen and Craftsmen </a>
+								</li>
+								<!--<li>-->
+									<!--<a href="splash.html"><i class="fa fa-sign-in"></i> Logout </a>-->
+								<!--</li>-->
+								
+								
+							</ul>
+						</div>
+					<!-- Menu navigation end -->
+					</nav>
+				</div>
+		<div class="wrapper with-bg-image2">
+			<!-- Header area start -->
+			<header> <!-- extra class no-background -->
+				<a class="go-back-link" href="javascript:history.back();"><i class="fa fa-arrow-left"></i></a>
+				<h1 class="page-title">GUARDIAN ANGEL</h1>
+				<div class="navi-menu-button">
+					<em></em>
+					<em></em>
+					<em></em>
+				</div>
+			</header>
+			<!-- Header area end -->
+			<!-- Page content start -->
+			<main>
+
+                    <div class="form-divider"></div>
+                    <div class="form-label-divider"><span>BODY GUARD SERVICE</span></div>
+                    <div class="form-divider"></div>
+			
+                <div class="container" style="margin-top: 40px;"></div>
+
+                    <section class="container">
+
+					<div class="form-row-group with-icons">
+						<div class="form-row no-padding">
+							<i class="fa fa-info"></i>
+							<input type="text" name="name" id="name" class="form-element" disabled value="sky scrapper">
+						</div>
+					</div>
+
+                    <div class="form-mini-divider"></div>
+                    
+                    <div class="form-row-group with-icons">
+						<div class="form-row no-padding">
+							<i class="fa fa-phone"></i>
+							<input type="tel" name="phone" id="phone" class="form-element" disabled value="0807">
+						</div>
+					</div>
+
+					<div class="form-mini-divider"></div>
+
+
+                    <div class="form-row-group with-icons">
+						<div class="form-row no-padding">
+							<i class="fa fa-envelope"></i>
+							<input type="text" name="email" id="email" class="form-element" disabled value="sky@example.com" />
+						</div>
+					</div>
+
+                    <div class="form-mini-divider"></div>
+
+                    <div class="form-row-group with-icons">
+						<div class="form-row no-padding">
+							<i class="fa fa-language"></i>
+							<select class="form-element" id="body_type" name="body_type">
+								<option value="Body Guard Service" selected>Body Guard Service</option>
+							</select>
+						</div>
+                    </div>
+                    
+
+                    <div class="form-mini-divider"></div>
+
+                    <div class="form-row-group with-icons">
+						<div class="form-row no-padding">
+							<i class="fa fa-address-book-o"></i>
+                            <textarea class="form-element" name="address" id="address" placeholder="Address"></textarea>
+						</div>
+					</div>
+
+					<div class="form-mini-divider"></div>
+                    
+					<div class="form-row-group with-icons">
+						<div class="form-row no-padding">
+							<i class="fa fa-address-book-o"></i>
+                            <textarea class="form-element" name="add_info" id="add_info" placeholder="Additional Information"></textarea>
+						</div>
+					</div>
+
+					<div class="form-mini-divider"></div>
+						<div class="form-mini-divider"></div>
+						<div id="error" class="form-row txt-center"></div>
+						<button class="button red" type="submit" data-loader="show" onclick="submitAjaxBodyRegForm(); return false;">Request</button>
+
+					<div class="form-divider"></div>
+
+				</section>
+			</main>
+			<!-- Page content end -->
+		</div>
+	</div>
+
+
+	<!--Page loader DOM Elements. Requared all pages-->
+	<div class="sweet-loader">
+		<div class="box">
+		  	<div class="circle1"></div>
+		  	<div class="circle2"></div>
+		  	<div class="circle3"></div>
+		</div>
+	</div>
+
+	<!-- JQuery library file. requared all pages -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+
+	<!-- Template global script file. requared all pages -->
+	<script src="js/global.script.js"></script>
+    <script src="js/app.js"></script>
+	
+</body>
+
+</html>
