@@ -83,7 +83,6 @@ public class LocationService extends Service implements
                     .addApi(LocationServices.API)
                     .build();
 
-            LocationManager mLocationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
 
             if (mGoogleApiClient != null) {
                 mGoogleApiClient.connect();
@@ -111,21 +110,9 @@ public class LocationService extends Service implements
 
   }
 
+    @SuppressWarnings("MissingPermission")
     @Override
     public void onConnected(@Nullable Bundle bundle) {
-
-        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED &&
-                ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
-
         startLocationUpdates();
 
         mLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
