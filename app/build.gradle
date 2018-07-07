@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 //apply plugin: 'me.tatarka.retrolambda' // make sure to apply last!
 android {
-    compileSdkVersion 26
-    buildToolsVersion '27.0.3'
+    compileSdkVersion 28
+    buildToolsVersion '28.0.1'
     defaultConfig {
         applicationId "com.guardian.webview.angel"
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 2
         versionName '1.1.2'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -30,8 +30,8 @@ android {
         }
     }
     compileOptions {
-        targetCompatibility 1.8
-        sourceCompatibility 1.8
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
     }
     productFlavors {
     }
@@ -43,17 +43,17 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     //    implementation 'org.xwalk:xwalk_core_library:23.53.589.4'
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
-    implementation 'com.squareup.okhttp3:okhttp:3.9.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0-alpha3'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     implementation 'com.google.code.gson:gson:2.8.2'
-    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
-    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
     implementation 'com.google.guava:guava-annotations:r03'
-    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
     implementation 'com.google.android.gms:play-services-location:6.5.87'
-    implementation 'com.android.support:support-v4:26.+'
-    implementation 'com.android.support:support-vector-drawable:26.+'
+    implementation 'com.android.support:support-v4:28.0.0-alpha3'
+    implementation 'com.android.support:support-vector-drawable:28.0.0-alpha3'
     implementation 'com.pusher:pusher-java-client:1.5.0'
     implementation 'commons-codec:commons-codec:1.9'
     implementation 'org.xwalk:xwalk_core_library:23.53.589.4'
